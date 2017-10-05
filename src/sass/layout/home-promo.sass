@@ -1,0 +1,57 @@
+.home-promo
+	background-color: $secondary
+	text-align: center
+
+	.home-wrapper
+		padding: 100px 50px
+		@media(max-width: 480px)
+			padding: 50px 0
+		h2
+			font-weight: $font-bold
+			color: $text-inverse
+			letter-spacing: 4px
+			position: relative
+			padding-bottom: 30px
+			line-height: 1.7
+
+		h2::after
+			background-color: darken($secondary,5%)
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			width: 90%
+			left: 50%
+			transform: translateX(-50%)
+			height: 3px
+		p
+			color: #ddd
+			margin-bottom: 50px
+		.icons
+			width: 100%
+			margin: 0 auto
+			font-size: 2em
+
+			@media(max-width: 520px)
+				font-size: 1.4em
+
+			i
+				position: relative
+			i::after
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translate(-50%,-23%) rotate(45deg)
+				border: solid 2px darken($secondary,5%)
+				width: 2em
+				height: 2em
+			.icon
+				padding: 1em 1.2em
+				display: inline-block
+
+				
+			
+
+

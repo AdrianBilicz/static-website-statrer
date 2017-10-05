@@ -1,0 +1,39 @@
+.hero
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	background-image: url("../../img/hero.jpg")
+	background-size: cover
+	color: $text-inverse
+	font-size: 2rem
+	.inner
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		.title-large
+			padding: 20px 0
+			position: relative
+			letter-spacing: 5px
+			width: 250px
+			text-align: center
+
+		.title-large::before, .title-large::after
+			position: absolute
+			content: ''
+			display: block
+			width: 100%
+			background-color: $white
+			height: 2px
+		.title-large::before
+			top: 0
+		.title-large::after
+			bottom: 0
+		.text-intro
+			font-size: 1em
+			width: 300px
+			text-align: center
+			font-weight: $font-light
+
+
